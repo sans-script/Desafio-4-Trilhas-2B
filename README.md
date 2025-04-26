@@ -27,3 +27,5 @@ Exemplos:
 `refactor`: melhorando a lógica de autenticação de usuários
 
 `chore`: atualizando dependências no arquivo package.json
+
+## Att Pytwer
