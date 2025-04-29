@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Educação - Maranhão</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Dados Educacionais do Maranhão</h1>
+            <p>Informações atualizadas sobre matrículas, infraestrutura e recursos</p>
+        </header>
+        
+        <div class="summary-cards">
+            <div class="card">
+                <h3>Total de Matrículas (2023)</h3>
+                <div class="value" id="totalEnrollments">1.250.000</div>
+            </div>
+            <div class="card success">
+                <h3>Escolas com Internet</h3>
+                <div class="value" id="schoolsWithInternet">78%</div>
+            </div>
+            <div class="card warning">
+                <h3>Professores com Tecnologia</h3>
+                <div class="value" id="teachersWithTech">65%</div>
+            </div>
+            <div class="card danger">
+                <h3>Escolas Rurais com Internet</h3>
+                <div class="value" id="ruralSchoolsInternet">42%</div>
+            </div>
+        </div>
+        
+        <div class="charts-container">
+            <div class="chart-card">
+                <h2>Evolução de Matrículas (2018-2023)</h2>
+                <div class="chart-container">
+                    <canvas id="evolutionChart"></canvas>
+                </div>
+            </div>
+        </div>
+        
+        <div class="info-grid">
+            <div class="info-section">
+                <h3>Equipamentos Disponíveis</h3>
+                <div class="info-item">
+                    <div class="label">Média de computadores por aluno</div>
+                    <div class="value" id="avgComputers">1.2</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Escolas com computadores funcionando</div>
+                    <div class="value" id="workingComputers">82%</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Escolas com tablets disponíveis</div>
+                    <div class="value" id="schoolsWithTablets">58%</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Dispositivos por escola</div>
+                    <div class="value" id="devicesPerSchool">3.1</div>
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <h3>Uso Pedagógico</h3>
+                <div class="info-item">
+                    <div class="label">Professores usando tecnologia</div>
+                    <div class="value" id="teachersUsingTech">65%</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Escolas com aulas de informática</div>
+                    <div class="value" id="schoolsWithIT">47%</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Escolas em programas de tecnologia</div>
+                    <div class="value" id="techPrograms">38%</div>
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <h3>Acesso por Localização</h3>
+                <div class="info-item">
+                    <div class="label">Escolas urbanas com internet</div>
+                    <div class="value" id="urbanInternet">92%</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Escolas rurais com internet</div>
+                    <div class="value" id="ruralInternet">42%</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Escolas com banda larga</div>
+                    <div class="value" id="broadband">68%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <script src="app.js"></script>
+</body>
+</html>
