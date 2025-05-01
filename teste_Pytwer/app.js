@@ -1,8 +1,7 @@
-// Dados fictícios - substituir por API real
+// Dados fictícios - substituir pela API real
 const educationData = {
     years: ['2018', '2019', '2020', '2021', '2022', '2023'],
     enrollments: [980000, 1050000, 1100000, 1150000, 1200000, 1250000],
-    modalities: ['Ensino Regular', 'EJA', 'Educação Especial', 'Profissionalizante'],
     modalityValues: [900000, 200000, 100000, 50000],
     infrastructure: {
         avgComputers: 1.2,
@@ -31,10 +30,8 @@ document.getElementById('ruralSchoolsInternet').textContent =
     `${educationData.infrastructure.ruralInternet}%`;
 
 // Atualiza as informações detalhadas
-document.getElementById('avgComputers').textContent = educationData.infrastructure.avgComputers;
 document.getElementById('workingComputers').textContent = `${educationData.infrastructure.workingComputers}%`;
 document.getElementById('schoolsWithTablets').textContent = `${educationData.infrastructure.schoolsWithTablets}%`;
-document.getElementById('devicesPerSchool').textContent = educationData.infrastructure.devicesPerSchool;
 document.getElementById('teachersUsingTech').textContent = `${educationData.pedagogical.teachersUsingTech}%`;
 document.getElementById('schoolsWithIT').textContent = `${educationData.pedagogical.schoolsWithIT}%`;
 document.getElementById('techPrograms').textContent = `${educationData.pedagogical.techPrograms}%`;
