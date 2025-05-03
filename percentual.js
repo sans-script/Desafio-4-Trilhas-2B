@@ -29,8 +29,8 @@ axios
     const percentualRurais = ((escolasRurais / totalEscolas) * 100).toFixed(2);
 
     // Exibe apenas os percentuais
-    console.log("Percentual de escolas urbanas no Maranhão:" ${percentualUrbanas},"%");
-    console.log("Percentual de escolas rurais no Maranhão:" ${percentualRurais},"%");
+    console.log(`Percentual de escolas urbanas no Maranhão: ${percentualUrbanas}%`);
+    console.log(`Percentual de escolas rurais no Maranhão: ${percentualRurais}%`);
   })
   .catch((error) => {
     console.error('Erro na requisição:', error);
