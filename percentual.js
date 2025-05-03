@@ -24,7 +24,7 @@ axios
     const totalEscolas = escolas.length;
     const escolasUrbanas = escolas.filter((escola) => escola.localizacao === 'Urbana').length;
     const escolasRurais = escolas.filter((escola) => escola.localizacao === 'Rural').length;
-
+    
     const percentualUrbanas = ((escolasUrbanas / totalEscolas) * 100).toFixed(2);
     const percentualRurais = ((escolasRurais / totalEscolas) * 100).toFixed(2);
 
