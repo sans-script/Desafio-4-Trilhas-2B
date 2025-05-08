@@ -6,7 +6,7 @@ const url =
 const options = {
     headers: {
         Accept: 'application/json',
-        Authorization: 'Bearer 0eCq1hevDWEewFwL3eFjcAaCtBQw1VGURgRTlQHb',
+        Authorization: 'Bearer iYnB1spKXMnwYCN7wPZ4KoQjeqGuzHRQTiEHL8ej',
     },
     httpsAgent: new https.Agent({
         rejectUnauthorized: false, // Ignora a validação SSL

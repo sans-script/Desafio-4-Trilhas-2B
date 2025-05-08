@@ -13,7 +13,6 @@ const options = {
         rejectUnauthorized: false, // apenas para testes locais
     }),
 };
-
 axios
     .get(url, options)
     .then((response) => {
