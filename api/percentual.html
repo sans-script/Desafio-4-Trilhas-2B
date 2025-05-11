@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuição de Escolas por Localização</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .chart-container {
+            width: 80%;
+            max-width: 600px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        
+        .info-box {
+            background-color: #e9f7fe;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            width: 80%;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Distribuição de Escolas por Localização</h1>
+    
+    <div class="info-box">
+        <p>Dados obtidos da API QEdu para o estado selecionado no ano de 2019</p>
+    </div>
+    
+    <div class="chart-container">
+        <canvas id="graficoEscolas"></canvas>
+    </div>
+
+    <!-- Incluindo as bibliotecas necessárias -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script>
+        // Configuração da requisição (igual ao seu código original)
+        const url = 'https://api.qedu.org.br/v1/escolas?estado_id=21&ano=2019';
+        const options = { 
+            headers: {
+                Accept: 'application/json',
+                Authorization: 'Bearer iYnB1spKXMnwYCN7wPZ4KoQjeqGuzHRQTiEHL8ej',
+            },
+            // Nota: Em um ambiente browser, não podemos usar https.Agent diretamente
+            // O rejectUnauthorized: false não é recomendado para produção
+        };
+
+        // Função para criar o gráfico
+        function criarGrafico(escolasUrbanas, escolasRurais, totalEscolas) {
+            const percentualUrbanas = ((escolasUrbanas / totalEscolas) * 100).toFixed(2);
+            const percentualRurais = ((escolasRurais / totalEscolas) * 100).toFixed(2);
+            
+            const ctx = document.getElementById('graficoEscolas').getContext('2d');
+            
+            new Chart(ctx, {
+                type: 'pie', // Tipo de gráfico - pode mudar para 'bar', 'doughnut', etc.
+                data: {
+                    labels: [
+                        `Urbana (${percentualUrbanas}%)`, 
+                        `Rural (${percentualRurais}%)`
+                    ],
+                    datasets: [{
+                        data: [escolasUrbanas, escolasRurais],
+                        backgroundColor: [
+                            'rgba(54, 162, 235, 0.7)',
+                            'rgba(75, 192, 192, 0.7)'
+                        ],
+                        borderColor: [
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(75, 192, 192, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        title: {
+                            display: true,
+                            text: `Distribuição de ${totalEscolas} Escolas por Localização`,
+                            font: {
+                                size: 16
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const label = context.label || '';
+                                    const value = context.raw || 0;
+                                    const percentage = ((value / totalEscolas) * 100).toFixed(2);
+                                    return `${label}: ${value} escolas (${percentage}%)`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Fazendo a requisição e processando os dados
+        axios.get(url, options)
+            .then(response => {
+                if (response.data && response.data.data) {
+                    const escolas = response.data.data;
+                    const totalEscolas = escolas.length;
+                    const escolasUrbanas = escolas.filter(escola => escola.localizacao === 'Urbana').length;
+                    const escolasRurais = escolas.filter(escola => escola.localizacao === 'Rural').length;
+                    
+                    criarGrafico(escolasUrbanas, escolasRurais, totalEscolas);
+                } else {
+                    console.error('Estrutura de dados diferente do esperado:', response.data);
+                    alert('Erro ao processar os dados da API');
+                }
+            })
+            .catch(error => {
+                console.error('Erro na requisição:', error);
+                alert('Erro ao carregar dados da API. Verifique o console para detalhes.');
+            });
+    </script>
+</body>
+</html>
