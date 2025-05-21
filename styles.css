@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+
+@theme {
+  --color-green-tics: #71CA98;
+  --color-blue-tics: #2C567B;
+}
+
+
 * {
   font-family: "Passion One", cursive;
 }
