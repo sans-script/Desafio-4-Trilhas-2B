@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TICS NA EDUCAÇÃO- PANORAMA GERAL</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+  </head>
+  <body class="bg-gray-100">
+    <div class="max-w-7xl mx-auto mt-10 px-6">
+      <!-- Header -->
+      <div class="bg-blue-600 text-white rounded-md px-6 py-10 h-56">
+        <h1 class="text-2xl font-bold">
+          TICS NA EDUCAÇÃO- <span class="font-normal">PANORAMA GERAL</span>
+        </h1>
+        <div class="mt-4 flex space-x-12">
+          <div>
+            <div class="text-4xl font-bold">1.0000</div>
+            <div class="uppercase text-sm opacity-90 mt-1">
+              Total de Escolas
+            </div>
+          </div>
+          <div>
+            <div class="text-4xl font-bold">000%</div>
+            <div class="uppercase text-sm opacity-90 mt-1">Escolas Rurais</div>
+          </div>
+          <div>
+            <div class="text-4xl font-bold">000%</div>
+            <div class="uppercase text-sm opacity-90 mt-1">Escolas Urbanas</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filters -->
+      <div class="flex space-x-4 relative -mt-12 z-12 px-6">
+        <select
+          class="bg-white border border-black rounded-md px-3 py-1.5 shadow"
+        >
+          <option>2024</option>
+          <option>2023</option>
+          <option>2022</option>
+        </select>
+        <select
+          class="bg-white border border-black rounded-md px-3 py-1.5 shadow"
+        >
+          <option>Anos Iniciais</option>
+          <option>Anos Finais</option>
+          <option>Ensino Médio</option>
+        </select>
+        <select
+          class="bg-white border border-black rounded-md px-3 py-1.5 shadow"
+        >
+          <option>Municipal</option>
+          <option>Estadual</option>
+          <option>Federal</option>
+        </select>
+      </div>
+
+      <!-- Dashboard Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+        <!-- Computadores por aluno -->
+        <div class="bg-white rounded-md shadow p-4 h-40 flex flex-col">
+          <h2 class="text-base font-medium mb-1">Computadores por aluno</h2>
+          <div class="flex-1 relative">
+            <canvas
+              id="chartComputadoresAluno"
+              class="absolute inset-0"
+            ></canvas>
+          </div>
+        </div>
+
+        <!-- Computadores administrativos -->
+        <div class="bg-white rounded-md shadow p-4 h-40 flex flex-col">
+          <h2 class="text-base font-medium mb-1">
+            Computadores administrativos
+          </h2>
+          <div class="flex-1 relative">
+            <canvas
+              id="chartComputadoresAdmin"
+              class="absolute inset-0"
+            ></canvas>
+          </div>
+        </div>
+
+        <!-- Rendimento Escolar -->
+        <div class="bg-white rounded-md shadow p-4 h-72 flex flex-col">
+          <h2 class="text-base font-medium mb-1">Rendimento Escolar</h2>
+          <div class="flex-1 relative">
+            <canvas id="chartRendimento" class="absolute inset-0"></canvas>
+          </div>
+        </div>
+
+        <!-- Espaço em branco -->
+        <div class="bg-white rounded-md shadow p-4 h-40 md:col-span-2"></div>
+
+        <!-- Distorção de Idade -->
+        <div class="bg-white rounded-md shadow p-4 h-40 flex flex-col">
+          <h2 class="text-base font-medium mb-1">Distorção de Idade</h2>
+          <div class="flex-1 relative">
+            <canvas id="chartDistorsao" class="absolute inset-0"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
