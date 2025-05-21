@@ -9,7 +9,7 @@
   <body class="bg-white text-gray-800">
     <!-- Header -->
     <header
-      class="bg-[#2C5A83] text-white px-8 pt-6 pb-44 relative overflow-hidden"
+      class="bg-blue-tics text-white px-8 pt-6 pb-44 relative overflow-hidden"
     >
       <div class="flex justify-between items-center">
         <div class="text-lg font-bold text-green-300">Trilhas Inova</div>
@@ -20,20 +20,44 @@
         </nav>
       </div>
 
-      <div class="mt-16 max-w-2xl">
-        <h1 class="text-5xl font-bold leading-tight">TICs NA EDUCAÇÃO</h1>
-        <div class="w-16 h-1 bg-green-400 mt-2 mb-4"></div>
-        <p class="text-base max-w-md">
-          As TICs (Tecnologias da Informação e Comunicação) na educação têm
-          transformado profundamente a forma como o ensino e a aprendizagem
-          ocorrem.
-        </p>
-        <a
-          href="../dashboard/index.html"
-          class="inline-block mt-6 px-6 py-3 bg-green-400 text-white rounded-full font-semibold hover:bg-green-500 transition-all"
-        >
-          ACESSE NOSSO DASHBOARD →
-        </a>
+      <div class="flex flex-col md:flex-row mt-16 items-start">
+        <div class="flex flex-col flex-1">
+          <h1 class="text-3xl md:text-5xl font-bold leading-tight">
+            TICs NA EDUCAÇÃO
+          </h1>
+          <div class="w-40 h-0.5 md:w-64 bg-green-tics mt-2 mb-4"></div>
+          <p class="text-sm md:text-base max-w-md">
+            As TICs (Tecnologias da Informação e Comunicação) na educação têm
+            transformado profundamente a forma como o ensino e a aprendizagem
+            ocorrem.
+          </p>
+          <a
+            href="../dashboard/index.html"
+            class="w-full max-w-xs md:w-80 relative mt-6 px-4 md:px-6 py-2 md:py-3 bg-green-tics text-white rounded-full font-semibold hover:bg-green-tics transition-all inline-flex items-center text-sm md:text-base justify-center"
+          >
+            ACESSE NOSSO DASHBOARD
+            <svg
+              width="19"
+              height="16"
+              viewBox="0 0 19 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="ml-2"
+            >
+              <path
+                d="M18.3321 2.08057C18.3715 1.56424 17.9309 1.10959 17.3479 1.06507L7.84711 0.339665C7.2641 0.29515 6.75951 0.677632 6.72009 1.19396C6.68067 1.71029 7.12133 2.16495 7.70435 2.20946L16.1495 2.85427L15.5784 10.3335C15.539 10.8498 15.9796 11.3044 16.5627 11.349C17.1457 11.3935 17.6503 11.011 17.6897 10.4947L18.3321 2.08057ZM1 14.3378L1.69597 15.0558L17.9725 2.71804L17.2765 1.99997L16.5805 1.2819L0.304025 13.6197L1 14.3378Z"
+                fill="#FFFEFE"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="flex-1 justify-end hidden md:flex">
+          <img
+            src="/assets/hero-image.png"
+            alt=""
+            class="object-contain w-40 h-40 sm:w-48 sm:h-48 md:w-96 md:h-96 lg:w-[400px] lg:h-[400px] max-w-full max-h-80 lg:max-h-none"
+          />
+        </div>
       </div>
 
       <!-- Efeito de onda contínua aprimorado -->
@@ -54,48 +78,333 @@
 
     <!-- Section: O que são TICs -->
     <section class="bg-white text-center px-6 py-16">
-      <h2 class="text-3xl text-[#2C5A83] mb-2 font-bold">O que são TICs?</h2>
-      <div class="w-16 h-1 bg-green-400 mx-auto mb-6"></div>
+      <h2 class="text-3xl text-blue-tics mb-2 font-bold">O que são TICs?</h2>
+      <div class="w-16 h-0.5 bg-green-tics mx-auto mb-6"></div>
       <p class="max-w-2xl mx-auto mb-12 text-gray-700">
         TICs são tecnologias utilizadas para coletar, processar, armazenar e
         disseminar informações. No contexto educacional, elas incluem:
       </p>
 
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
-        <div class="flex flex-col items-center">
-          <div class="w-16 h-16 bg-green-300 rounded-full"></div>
-          <p class="mt-2 text-xs text-center">Computadores e notebooks</p>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-12">
+        <div class="flex flex-col relative w-28 h-28 items-center">
+          <div
+            class="absolute top-4 w-20 h-20 bg-green-tics rounded-full z-0"
+          ></div>
+          <img
+            src="/assets/computer-icon.png"
+            alt="Computadores e notebooks"
+            class="w-24 h-24 z-10 relative pt-6 pl-2"
+          />
+          <p class="mt-8 text-xs text-center">Computadores e notebooks</p>
         </div>
-        <div class="flex flex-col items-center">
-          <div class="w-16 h-16 bg-green-300 rounded-full"></div>
-          <p class="mt-2 text-xs text-center">Internet e redes sociais</p>
+        <div class="flex flex-col relative w-28 h-28 items-center">
+          <div
+            class="absolute top-4 w-20 h-20 bg-green-tics rounded-full z-0"
+          ></div>
+          <img
+            src="/assets/browser-icon.png"
+            alt="Navegadores de internet"
+            class="w-20 z-10 relative pt-5 pl-2"
+          />
+          <p class="mt-8 text-xs text-center">Navegadores de internet</p>
         </div>
-        <div class="flex flex-col items-center">
-          <div class="w-16 h-16 bg-green-300 rounded-full"></div>
-          <p class="mt-2 text-xs text-center">
-            Aplicativos e plataformas educacionais
-          </p>
+        <div class="flex flex-col relative w-28 h-28 items-center">
+          <div
+            class="absolute top-4 w-20 h-20 bg-green-tics rounded-full z-0"
+          ></div>
+          <img
+            src="/assets/media-icon.png"
+            alt="Mídias digitais"
+            class="w-20 z-10 relative pt-5"
+          />
+          <p class="mt-8 text-xs text-center">Mídias digitais</p>
         </div>
-        <div class="flex flex-col items-center">
-          <div class="w-16 h-16 bg-green-300 rounded-full"></div>
-          <p class="mt-2 text-xs text-center">
-            Ambientes Virtuais de Aprendizagem (AVA)
-          </p>
+        <div class="flex flex-col relative w-28 h-28 items-center">
+          <div
+            class="absolute top-4 w-20 h-20 bg-green-tics rounded-full z-0"
+          ></div>
+          <img
+            src="/assets/monitor-icon.png"
+            alt="Monitores e projetores"
+            class="w-20 z-10 relative pt-6"
+          />
+          <p class="mt-8 text-xs text-center">Monitores e projetores</p>
         </div>
-        <div class="flex flex-col items-center">
-          <div class="w-16 h-16 bg-green-300 rounded-full"></div>
-          <p class="mt-2 text-xs text-center">
-            Lousas digitais, tablets e smartphones
-          </p>
+        <div class="flex flex-col relative w-28 h-28 items-center">
+          <div
+            class="absolute top-4 w-20 h-20 bg-green-tics rounded-full z-0"
+          ></div>
+          <img
+            src="/assets/phone-apps.png"
+            alt="Aplicativos e smartphones"
+            class="w-20 z-10 relative"
+          />
+          <p class="mt-6 text-xs text-center">Aplicativos e smartphones</p>
         </div>
-        <div class="flex flex-col items-center">
-          <div class="w-16 h-16 bg-green-300 rounded-full"></div>
-          <p class="mt-2 text-xs text-center">
-            Recursos multimídia (vídeos, podcasts, games, etc.)
-          </p>
+        <div class="flex flex-col relative w-28 h-28 items-center">
+          <div
+            class="absolute top-4 w-20 h-20 bg-green-tics rounded-full z-0"
+          ></div>
+          <img
+            src="/assets/tab-icon.png"
+            alt="Tablets"
+            class="w-20 z-10 relative pt-5.5 pl-3"
+          />
+          <p class="mt-12 text-xs text-center">Tablets</p>
         </div>
       </div>
     </section>
+
+    <!-- Benefícios das TICs na Educação -->
+    <section class="bg-white py-16 px-4 flex flex-col items-center">
+      <h2 class="text-3xl text-blue-tics font-bold mb-2 text-center">
+        Benefícios das TICs na Educação
+      </h2>
+      <div class="w-24 h-0.5 bg-green-tics mx-auto mb-10"></div>
+      <div
+        class="flex flex-col lg:flex-row items-center justify-center gap-12 w-full max-w-6xl"
+      >
+        <!-- Benefícios à esquerda -->
+        <div class="flex-1 flex flex-col gap-12">
+          <div>
+            <h3 class="text-lg font-semibold text-blue-tics mb-1">
+              Acesso ampliado ao conhecimento
+            </h3>
+            <p class="text-sm text-gray-700">
+              Estudantes podem acessar conteúdos variados a qualquer momento e
+              em qualquer lugar, rompendo as barreiras físicas da sala de aula.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-blue-tics mb-1">
+              Personalização da aprendizagem
+            </h3>
+            <p class="text-sm text-gray-700">
+              Plataformas adaptativas ajustam o conteúdo conforme o ritmo e as
+              necessidades do aluno.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-blue-tics mb-1">
+              Estímulo à autonomia e ao protagonismo do aluno
+            </h3>
+            <p class="text-sm text-gray-700">
+              As TICs incentivam a autonomia dos estudantes ao possibilitar que
+              aprendam no seu próprio ritmo, explorem conteúdos extras e assumam
+              responsabilidade pelo próprio aprendizado.
+            </p>
+          </div>
+        </div>
+        <!-- Árvore central -->
+        <div class="flex-1 flex justify-center">
+          <img
+            src="/assets/tree.png"
+            alt="Árvore dos benefícios das TICs"
+            class="w-80 md:w-96 lg:w-[420px] max-w-full"
+          />
+        </div>
+        <!-- Benefícios à direita -->
+        <div class="flex-1 flex flex-col gap-12 items-end text-right">
+          <div class="w-full">
+            <h3 class="text-lg font-semibold text-blue-tics mb-1">
+              Ensino mais dinâmico e interativo
+            </h3>
+            <p class="text-sm text-gray-700">
+              O uso de vídeos, simulações, jogos e quizzes torna o processo de
+              aprendizagem mais atrativo.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-blue-tics mb-1">
+              Desenvolvimento de novas competências
+            </h3>
+            <p class="text-sm text-gray-700">
+              Além do conteúdo curricular, os alunos desenvolvem habilidades
+              digitais, pensamento crítico e autonomia.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-blue-tics mb-1">
+              Colaboração e comunicação
+            </h3>
+            <p class="text-sm text-gray-700">
+              Ferramentas como fóruns, chats e videoconferências facilitam a
+              aprendizagem colaborativa e o contato entre alunos e professores.
+            </p>
+          </div>
+        </div>
+      </div>
+      <a
+        href="../dashboard/index.html"
+        class="mt-12 px-8 py-3 bg-green-tics text-white rounded-full font-semibold hover:bg-green-400 transition-all inline-flex items-center text-base"
+      >
+        ACESSE NOSSO DASHBOARD
+        <svg
+          width="22"
+          height="22"
+          viewBox="0 0 19 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="ml-2"
+        >
+          <path
+            d="M18.3321 2.08057C18.3715 1.56424 17.9309 1.10959 17.3479 1.06507L7.84711 0.339665C7.2641 0.29515 6.75951 0.677632 6.72009 1.19396C6.68067 1.71029 7.12133 2.16495 7.70435 2.20946L16.1495 2.85427L15.5784 10.3335C15.539 10.8498 15.9796 11.3044 16.5627 11.349C17.1457 11.3935 17.6503 11.011 17.6897 10.4947L18.3321 2.08057ZM1 14.3378L1.69597 15.0558L17.9725 2.71804L17.2765 1.99997L16.5805 1.2819L0.304025 13.6197L1 14.3378Z"
+            fill="#FFFEFE"
+          />
+        </svg>
+      </a>
+    </section>
+
+    <section class="bg-white py-12 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-center text-xl font-medium text-gray-800 mb-2">
+          O que dizem os especialistas?
+        </h2>
+        <div class="h-0.5 w-32 bg-green-400 mx-auto mb-10"></div>
+
+        <!-- Slider Container -->
+        <div class="relative">
+          <!-- Slides Wrapper -->
+          <div class="overflow-hidden p-6">
+            <div
+              id="testimonial-slides"
+              class="flex transition-transform duration-500 ease-in-out"
+              style="transform: translateX(0%)"
+            >
+              <!-- Slide 1 -->
+              <div class="w-full md:w-1/3 flex-shrink-0 px-4">
+                <div
+                  class="bg-gray-50 p-6 rounded-lg shadow-sm text-left h-full"
+                >
+                  <h3 class="font-medium text-gray-900">José Manuel Moran</h3>
+                  <p class="text-green-500 text-sm mb-4">
+                    Pesquisador em educação e tecnologias
+                  </p>
+                  <p class="text-sm text-gray-600">
+                    "As tecnologias, sozinhas, não transformam a educação. Mas,
+                    quando integradas com metodologias ativas e bem planejadas,
+                    tornam a aprendizagem mais envolvente, significativa e
+                    personalizada."
+                  </p>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="w-full md:w-1/3 flex-shrink-0 px-4">
+                <div
+                  class="bg-gray-50 p-6 rounded-lg shadow-sm text-left h-full"
+                >
+                  <h3 class="font-medium text-gray-900">Léa Fagundes</h3>
+                  <p class="text-green-500 text-sm mb-4">
+                    Psicologia e educadora brasileira
+                  </p>
+                  <p class="text-sm text-gray-600">
+                    "O uso pedagógico das tecnologias exige uma mudança de
+                    postura dos educadores, que devem deixar de ser
+                    transmissores de conhecimento e passar a ser mediadores."
+                  </p>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="w-full md:w-1/3 flex-shrink-0 px-4">
+                <div
+                  class="bg-gray-50 p-6 rounded-lg shadow-sm text-left h-full"
+                >
+                  <h3 class="font-medium text-gray-900">Paulo Freire</h3>
+                  <p class="text-green-500 text-sm mb-4">
+                    Educador e filósofo brasileiro
+                  </p>
+                  <p class="text-sm text-gray-600">
+                    "Ensinar não é transferir conhecimento, mas criar as
+                    possibilidades para a sua própria produção ou a sua
+                    construção."
+                  </p>
+                </div>
+              </div>
+
+              <!-- Slide 4 -->
+              <div class="w-full md:w-1/3 flex-shrink-0 px-4">
+                <div
+                  class="bg-gray-50 p-6 rounded-lg shadow-sm text-left h-full"
+                >
+                  <h3 class="font-medium text-gray-900">Paulo Freire</h3>
+                  <p class="text-green-500 text-sm mb-4">
+                    Educador e filósofo brasileiro
+                  </p>
+                  <p class="text-sm text-gray-600">
+                    "Ensinar não é transferir conhecimento, mas criar as
+                    possibilidades para a sua própria produção ou a sua
+                    construção."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Arrow -->
+          <button
+            id="next-btn"
+            class="absolute top-1/2 -right-6 transform -translate-y-1/2 rounded-full p-2 focus:outline-none"
+            aria-label="Próximo"
+          >
+            <svg
+              width="22"
+              height="38"
+              viewBox="0 0 22 38"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="-0.679596"
+                y="2.58044"
+                width="5.04202"
+                height="27.4007"
+                rx="2.52101"
+                transform="rotate(-45.2449 -0.679596 2.58044)"
+                fill="#2C567B"
+              />
+              <path
+                d="M4.34387 36.2816C3.35715 37.2639 1.76093 37.2603 0.778625 36.2736V36.2736C-0.203684 35.2869 -0.200108 33.6907 0.786611 32.7084L16.4388 17.1261C17.4256 16.1438 19.0218 16.1474 20.0041 17.1341V17.1341C20.9864 18.1208 20.9828 19.717 19.9961 20.6994L4.34387 36.2816Z"
+                fill="#2C567B"
+              />
+            </svg>
+          </button>
+          <!-- Navigation Arrow - Previous -->
+          <button
+            id="prev-btn"
+            class="absolute top-1/2 -left-6 transform -translate-y-1/2 rounded-full p-2 focus:outline-none hidden"
+            aria-label="Anterior"
+          >
+            <!-- Ícone personalizado SVG do botão de voltar -->
+            <svg
+              width="22"
+              height="38"
+              viewBox="0 0 22 38"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="22.6796"
+                y="35.4196"
+                width="5.04202"
+                height="27.4007"
+                rx="2.52101"
+                transform="rotate(134.755 22.6796 35.4196)"
+                fill="#2C567B"
+              />
+              <path
+                d="M17.6561 1.71839C18.6429 0.736079 20.2391 0.739652 21.2214 1.72637C22.2037 2.71309 22.2001 4.3093 21.2134 5.29161L5.56116 20.8739C4.57444 21.8562 2.97823 21.8526 1.99592 20.8659C1.01361 19.8792 1.01719 18.283 2.00391 17.3006L17.6561 1.71839Z"
+                fill="#2C567B"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer></footer>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./script.js"></script>
   </body>
