@@ -2,7 +2,6 @@
   "name": "desafio-4-trilhas-2b",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "npx @tailwindcss/cli -i ./styles.css -o ./dist/output.css --watch",
     "build": "npx @tailwindcss/cli -i ./styles.css -o ./dist/output.css"
@@ -14,7 +13,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/sans-script/Desafio-4-Trilhas-2B/issues"
   },
