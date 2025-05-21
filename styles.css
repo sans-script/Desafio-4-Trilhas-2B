@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-.title {
-  font-size: 100px;
+* {
+  font-family: "Passion One", cursive;
 }
-
