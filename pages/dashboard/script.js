@@ -98,7 +98,6 @@ document.addEventListener('DOMContentLoaded', function() {
   updateRendimento();
   updateIdebMat();
 });
-=======
 const chartOptions = {
   responsive: true,
   maintainAspectRatio: false,
@@ -187,4 +186,3 @@ new Chart(document.getElementById("chartMatriculas"), {
   },
   options: chartOptions,
 });
->>>>>>> 689330c79b7718dd35c3b8545b4e62a18fae2de1

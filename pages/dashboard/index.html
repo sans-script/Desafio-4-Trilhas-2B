@@ -1,170 +1,146 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TICS NA EDUCAÇÃO - PANORAMA GERAL</title>
-    <link rel="stylesheet" href="/dist/output.css" />
-  </head>
-  <body class="bg-gray-100">
-    <div class="max-w-7xl mx-auto mt-10 px-4 sm:px-6 lg:px-8">
-      <!-- Header -->
-      <div class="bg-blue-600 text-white rounded-lg px-6 py-8 mb-8 shadow-lg">
-        <h1 class="text-2xl sm:text-3xl font-bold">
-          TICS NA EDUCAÇÃO - <span class="font-normal">PANORAMA GERAL</span>
-        </h1>
-        <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div class="bg-blue-700 p-4 rounded-lg">
-            <div class="text-3xl font-bold">1.0000</div>
-            <div class="text-sm opacity-90 mt-1">Total de Escolas</div>
-          </div>
-          <div class="bg-blue-700 p-4 rounded-lg">
-            <div class="text-3xl font-bold">000%</div>
-            <div class="text-sm opacity-90 mt-1">Escolas Rurais</div>
-          </div>
-          <div class="bg-blue-700 p-4 rounded-lg">
-            <div class="text-3xl font-bold">000%</div>
-            <div class="text-sm opacity-90 mt-1">Escolas Urbanas</div>
-          </div>
-          <div class="bg-blue-700 p-4 rounded-lg">
-            <div class="text-3xl font-bold">2024</div>
-            <div class="text-sm opacity-90 mt-1">Anos Iniciais Municipal</div>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TICS NA EDUCAÇÃO - PANORAMA GERAL</title>
+  <link rel="stylesheet" href="/dist/output.css" />
+</head>
+
+<body class="bg-gray-100">
+  <div class="max-w-7xl mx-auto mt-10 px-4 sm:px-6 lg:px-8">
+    <!-- Header -->
+    <div class="bg-blue-600 text-white rounded-lg px-6 py-8 mb-8 shadow-lg">
+      <h1 class="text-2xl sm:text-3xl font-bold">
+        TICS NA EDUCAÇÃO - <span class="font-normal">PANORAMA GERAL</span>
+      </h1>
+      <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="bg-blue-700 p-4 rounded-lg">
+          <div class="text-3xl font-bold">1.0000</div>
+          <div class="text-sm opacity-90 mt-1">Total de Escolas</div>
+        </div>
+        <div class="bg-blue-700 p-4 rounded-lg">
+          <div class="text-3xl font-bold">000%</div>
+          <div class="text-sm opacity-90 mt-1">Escolas Rurais</div>
+        </div>
+        <div class="bg-blue-700 p-4 rounded-lg">
+          <div class="text-3xl font-bold">000%</div>
+          <div class="text-sm opacity-90 mt-1">Escolas Urbanas</div>
+        </div>
+        <div class="bg-blue-700 p-4 rounded-lg">
+          <div class="text-3xl font-bold">2024</div>
+          <div class="text-sm opacity-90 mt-1">Anos Iniciais Municipal</div>
         </div>
       </div>
+    </div>
+    <div class="flex flex-wrap gap-4 mb-8">
+      <select
+        class="bg-white border border-gray-300 rounded-md px-3 py-2 shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+        <option>2019</option>
+        <option>2019</option>
+        <option>2019</option>
+      </select>
+      <select
+        class="bg-white border border-gray-300 rounded-md px-3 py-2 shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+        <option>Anos Iniciais</option>
+        <option>Anos Finais</option>
+        <option>Ensino Médio</option>
+      </select>
+      <select
+        class="bg-white border border-gray-300 rounded-md px-3 py-2 shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+        <option>Municipal</option>
+        <option>Estadual</option>
+        <option>Federal</option>
+      </select>
+    </div>
 
-      <!-- Filtros -->
-      <div class="flex flex-wrap gap-4 mb-8">
-        <select
-          class="bg-white border border-gray-300 rounded-md px-3 py-2 shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-        >
-          <option>2024</option>
-          <option>2023</option>
-          <option>2022</option>
-        </select>
-        <select
-          class="bg-white border border-gray-300 rounded-md px-3 py-2 shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-        >
-          <option>Anos Iniciais</option>
-          <option>Anos Finais</option>
-          <option>Ensino Médio</option>
-        </select>
-        <select
-          class="bg-white border border-gray-300 rounded-md px-3 py-2 shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-        >
-          <option>Municipal</option>
-          <option>Estadual</option>
-          <option>Federal</option>
-        </select>
-      </div>
+    <!-- Filtros -->
 
-      <!-- Seção de Computadores -->
-      <div class="mb-8">
-        <h2 class="text-xl font-semibold mb-4 text-gray-800">
-          Rendimento Escolar
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <!-- Computadores por aluno -->
-          <div class="bg-white rounded-lg shadow p-6 dashboard-card">
-            <h3 class="text-lg font-medium mb-4">Computadores por aluno</h3>
-            <div class="flex justify-between items-center">
-              <div class="text-center">
-                <div class="text-2xl font-bold text-blue-600">000%</div>
-                <div class="text-sm text-gray-600">Zona Urbana</div>
-              </div>
-              <div class="text-center">
-                <div class="text-2xl font-bold text-green-600">000%</div>
-                <div class="text-sm text-gray-600">Zona Rural</div>
-              </div>
-            </div>
-            <div class="mt-4 h-48">
-              <canvas id="chartComputadoresAluno"></canvas>
-            </div>
-          </div>
-
-          <!-- Computadores administrativos -->
-          <div class="bg-white rounded-lg shadow p-6 dashboard-card">
-            <h3 class="text-lg font-medium mb-4">
-              Computadores administrativos
-            </h3>
-            <div class="flex justify-between items-center">
-              <div class="text-center">
-                <div class="text-2xl font-bold text-blue-600">000%</div>
-                <div class="text-sm text-gray-600">Zona Urbana</div>
-              </div>
-              <div class="text-center">
-                <div class="text-2xl font-bold text-green-600">000%</div>
-                <div class="text-sm text-gray-600">Zona Rural</div>
-              </div>
-            </div>
-            <div class="mt-4 h-48">
-              <canvas id="chartComputadoresAdmin"></canvas>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Seção IDEB -->
-      <div class="mb-8">
-        <h2 class="text-xl font-semibold mb-4 text-gray-800">IDEB</h2>
+    <!-- Seção de Computadores -->
+    <div class="mb-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Computadores por aluno -->
         <div class="bg-white rounded-lg shadow p-6 dashboard-card">
-          <div class="flex flex-wrap gap-4 mb-6">
-            <div class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">
-              1º ano
+          <h3 class="text-lg font-medium mb-4">Computadores por aluno</h3>
+          <div class="flex justify-between items-center">
+            <div class="text-center">
+              <div class="text-2xl font-bold text-blue-600">000%</div>
+              <div class="text-sm text-gray-600">Zona Urbana</div>
             </div>
-            <div class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">
-              2º ano
-            </div>
-            <div class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">
-              3º ano
-            </div>
-            <div class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">
-              4º ano
-            </div>
-            <div class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">
-              5º ano
+            <div class="text-center">
+              <div class="text-2xl font-bold text-green-600">000%</div>
+              <div class="text-sm text-gray-600">Zona Rural</div>
             </div>
           </div>
-          <div class="h-64">
-            <canvas id="chartIdeb"></canvas>
+          <div class="mt-4 h-48">
+            <canvas id="chartComputadoresAluno"></canvas>
+          </div>
+        </div>
+
+        <!-- Computadores administrativos -->
+        <div class="bg-white rounded-lg shadow p-6 dashboard-card">
+          <h3 class="text-lg font-medium mb-4">
+            Computadores administrativos
+          </h3>
+          <div class="flex justify-between items-center">
+            <div class="text-center">
+              <div class="text-2xl font-bold text-blue-600">000%</div>
+              <div class="text-sm text-gray-600">Zona Urbana</div>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl font-bold text-green-600">000%</div>
+              <div class="text-sm text-gray-600">Zona Rural</div>
+            </div>
+          </div>
+          <div class="mt-4 h-48">
+            <canvas id="chartComputadoresAdmin"></canvas>
           </div>
         </div>
       </div>
+    </div>
 
+    <!-- Seção IDEB -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- IDEB -->
+      <div class="bg-white rounded-lg shadow p-6 dashboard-card">
+        <h3 class="text-lg font-medium mb-4">IDEB</h3>
+        <div class="flex flex-wrap gap-4 mb-4">
+          <div class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">1º ano</div>
+          <div class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">2º ano</div>
+          <div class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">3º ano</div>
+          <div class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">4º ano</div>
+          <div class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">5º ano</div>
+        </div>
+        <div class="h-48">  <!-- mesma altura de gráfico -->
+          <canvas id="chartIdeb"></canvas>
+        </div>
+      </div>
+  
       <!-- Seção Matrículas -->
       <div class="mb-8">
-        <h2 class="text-xl font-semibold mb-4 text-gray-800">
-          Quantidade de Matrículas
-        </h2>
         <div class="bg-white rounded-lg shadow p-6 dashboard-card">
+          <h2 class="text-xl font-semibold mb-4 text-gray-800">
+            Quantidade de Matrículas
+          </h2>
           <div class="grid grid-cols-2 sm:grid-cols-5 gap-4 mb-6">
-            <div
-              class="px-4 py-2 bg-gray-100 text-gray-800 rounded-md text-center"
-            >
+            <div class="px-4 py-2 bg-gray-100 text-gray-800 rounded-md text-center">
               <div class="font-bold">1º ano</div>
               <div class="text-sm">0000</div>
             </div>
-            <div
-              class="px-4 py-2 bg-gray-100 text-gray-800 rounded-md text-center"
-            >
+            <div class="px-4 py-2 bg-gray-100 text-gray-800 rounded-md text-center">
               <div class="font-bold">2º ano</div>
               <div class="text-sm">0000</div>
             </div>
-            <div
-              class="px-4 py-2 bg-gray-100 text-gray-800 rounded-md text-center"
-            >
+            <div class="px-4 py-2 bg-gray-100 text-gray-800 rounded-md text-center">
               <div class="font-bold">3º ano</div>
               <div class="text-sm">0000</div>
             </div>
-            <div
-              class="px-4 py-2 bg-gray-100 text-gray-800 rounded-md text-center"
-            >
+            <div class="px-4 py-2 bg-gray-100 text-gray-800 rounded-md text-center">
               <div class="font-bold">4º ano</div>
               <div class="text-sm">0000</div>
             </div>
-            <div
-              class="px-4 py-2 bg-gray-100 text-gray-800 rounded-md text-center"
-            >
+            <div class="px-4 py-2 bg-gray-100 text-gray-800 rounded-md text-center">
               <div class="font-bold">5º ano</div>
               <div class="text-sm">0000</div>
             </div>
@@ -179,5 +155,6 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  </body>
+</body>
+
 </html>
