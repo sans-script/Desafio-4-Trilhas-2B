@@ -7,16 +7,18 @@
     <title>TICs na Educação</title>
   </head>
   <body class="bg-white text-gray-800">
-    <!-- Header -->
     <header
-      class="bg-blue-tics text-white px-8 pt-6 pb-44 relative overflow-hidden"
+      class="text-white px-8 pt-6 pb-44 overflow-hidden bg-blue-tics"
+      id="home"
     >
       <div class="flex justify-between items-center">
-        <div class="text-lg font-bold text-green-300">Trilhas Inova</div>
-        <nav class="space-x-6 text-sm text-green-300">
-          <a href="#" class="hover:underline">Home</a>
-          <a href="#" class="hover:underline">Contato</a>
-          <a href="#" class="hover:underline">Sobre</a>
+        <div class="text-lg font-bold text-green-300 z-50">Trilhas Inova</div>
+        <nav
+          class="space-x-4 text-sm text-green-300 fixed top-6 right-8  z-20 bg-opacity-90 px-6 py-2 rounded-full bg-blue-tics"
+        >
+          <a href="#home" class="hover:underline">Home</a>
+          <a href="#contato" class="hover:underline">Contato</a>
+          <a href="#sobre" class="hover:underline">Sobre</a>
         </nav>
       </div>
 
@@ -59,25 +61,21 @@
           />
         </div>
       </div>
-
-      <!-- Efeito de onda contínua aprimorado -->
-      <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
-        <svg
-          class="relative block w-full h-[120px]"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M0,80 C300,140 900,20 1200,80 L1200,120 L0,120 Z"
-            fill="#ffffff"
-          />
-        </svg>
-      </div>
     </header>
-
-    <!-- Section: O que são TICs -->
-    <section class="bg-white text-center px-6 py-16">
+    <div class="left-0 w-full overflow-hidden leading-[0] pointer-events-none">
+      <svg
+        class="w-full h-[100px]"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M0,80 C300,140 900,20 1200,80 L1200,0 L0,0 Z" fill="#2C567B" />
+      </svg>
+    </div>
+    <section
+      class="bg-white text-center px-6 py-16 flex flex-col items-center justify-center"
+      id="sobre"
+    >
       <h2 class="text-3xl text-blue-tics mb-2 font-bold">O que são TICs?</h2>
       <div class="w-16 h-0.5 bg-green-tics mx-auto mb-6"></div>
       <p class="max-w-2xl mx-auto mb-12 text-gray-700">
@@ -154,8 +152,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Benefícios das TICs na Educação -->
     <section class="bg-white py-16 px-4 flex flex-col items-center">
       <h2 class="text-3xl text-blue-tics font-bold mb-2 text-center">
         Benefícios das TICs na Educação
@@ -195,7 +191,6 @@
             </p>
           </div>
         </div>
-        <!-- Árvore central -->
         <div class="flex-1 flex justify-center">
           <img
             src="/assets/tree.png"
@@ -254,17 +249,13 @@
         </svg>
       </a>
     </section>
-
     <section class="bg-white py-12 px-4 sm:px-6 lg:px-8">
       <div class="max-w-6xl mx-auto">
         <h2 class="text-center text-xl font-medium text-gray-800 mb-2">
           O que dizem os especialistas?
         </h2>
         <div class="h-0.5 w-32 bg-green-400 mx-auto mb-10"></div>
-
-        <!-- Slider Container -->
         <div class="relative">
-          <!-- Slides Wrapper -->
           <div class="overflow-hidden p-6">
             <div
               id="testimonial-slides"
@@ -276,15 +267,14 @@
                 <div
                   class="bg-gray-50 p-6 rounded-lg shadow-sm text-left h-full"
                 >
-                  <h3 class="font-medium text-gray-900">José Manuel Moran</h3>
-                  <p class="text-green-500 text-sm mb-4">
-                    Pesquisador em educação e tecnologias
+                  <h3 class="font-medium text-gray-900">Débora Garofalo</h3>
+                  <p class="text-green-tics text-sm mb-4">
+                    Consultora de educação
                   </p>
                   <p class="text-sm text-gray-600">
-                    "As tecnologias, sozinhas, não transformam a educação. Mas,
-                    quando integradas com metodologias ativas e bem planejadas,
-                    tornam a aprendizagem mais envolvente, significativa e
-                    personalizada."
+                    “Devemos olhar para tecnologia de forma humanizadora e de
+                    maneira integral.Ressignificação é chave em nosso processo
+                    de educação.”
                   </p>
                 </div>
               </div>
@@ -295,7 +285,7 @@
                   class="bg-gray-50 p-6 rounded-lg shadow-sm text-left h-full"
                 >
                   <h3 class="font-medium text-gray-900">Léa Fagundes</h3>
-                  <p class="text-green-500 text-sm mb-4">
+                  <p class="text-green-tics text-sm mb-4">
                     Psicologia e educadora brasileira
                   </p>
                   <p class="text-sm text-gray-600">
@@ -311,14 +301,13 @@
                 <div
                   class="bg-gray-50 p-6 rounded-lg shadow-sm text-left h-full"
                 >
-                  <h3 class="font-medium text-gray-900">Paulo Freire</h3>
-                  <p class="text-green-500 text-sm mb-4">
-                    Educador e filósofo brasileiro
+                  <h3 class="font-medium text-gray-900">Diego Trujilo</h3>
+                  <p class="text-green-tics text-sm mb-4">
+                    Professor de inglês e coordenador de tecnologia
                   </p>
                   <p class="text-sm text-gray-600">
-                    "Ensinar não é transferir conhecimento, mas criar as
-                    possibilidades para a sua própria produção ou a sua
-                    construção."
+                    “As novas tecnologias ajudam no aprendizado a partir do
+                    momento em que o professor se apropria desse conhecimento”
                   </p>
                 </div>
               </div>
@@ -328,24 +317,79 @@
                 <div
                   class="bg-gray-50 p-6 rounded-lg shadow-sm text-left h-full"
                 >
-                  <h3 class="font-medium text-gray-900">Paulo Freire</h3>
-                  <p class="text-green-500 text-sm mb-4">
-                    Educador e filósofo brasileiro
+                  <h3 class="font-medium text-gray-900">Rafael Ribeiro</h3>
+                  <p class="text-green-tics text-sm mb-4">
+                    Professor de biologia no Colégio Mater Dei
                   </p>
                   <p class="text-sm text-gray-600">
-                    "Ensinar não é transferir conhecimento, mas criar as
-                    possibilidades para a sua própria produção ou a sua
-                    construção."
+                    “O maior desafio atualmente é os professores conseguirem
+                    notar que a tecnologia pode tornar o processo de
+                    ensino-aprendizagem melhor”
+                  </p>
+                </div>
+              </div>
+
+              <!-- Slide 5 -->
+              <div class="w-full md:w-1/3 flex-shrink-0 px-4">
+                <div
+                  class="bg-gray-50 p-6 rounded-lg shadow-sm text-left h-full"
+                >
+                  <h3 class="font-medium text-gray-900">
+                    Edilene von Wallwitz
+                  </h3>
+                  <p class="text-green-tics text-sm mb-4">
+                    Professora de língua portuguesa e alemão
+                  </p>
+                  <p class="text-sm text-gray-600">
+                    “O professor precisa dominar essas ferramentas, participar
+                    de cursos, se inteirar a respeito, praticar. É preciso estar
+                    embasado para manter a atenção do aluno”
+                  </p>
+                </div>
+              </div>
+
+              <!-- Slide 6 -->
+              <div class="w-full md:w-1/3 flex-shrink-0 px-4">
+                <div
+                  class="bg-gray-50 p-6 rounded-lg shadow-sm text-left h-full"
+                >
+                  <h3 class="font-medium text-gray-900">Samantha Kutscka</h3>
+                  <p class="text-green-tics text-sm mb-4">
+                    Coordenadora de projetos da Escola do Futuro da USP
+                  </p>
+                  <p class="text-sm text-gray-600">
+                    “A vantagem vem de como a tecnologia nos faz repensar a
+                    educação e como possibilita a criação de novas dinâmicas
+                    para uma aprendizagem participativa, colaborativa e
+                    criativa, focada no desenvolvimento das novas literacias.”
+                  </p>
+                </div>
+              </div>
+
+              <!-- Slide 6 -->
+              <div class="w-full md:w-1/3 flex-shrink-0 px-4">
+                <div
+                  class="bg-gray-50 p-6 rounded-lg shadow-sm text-left h-full"
+                >
+                  <h3 class="font-medium text-gray-900">Samantha Kutscka</h3>
+                  <p class="text-green-tics text-sm mb-4">
+                    Coordenadora de projetos da Escola do Futuro da USP
+                  </p>
+                  <p class="text-sm text-gray-600">
+                    “A tecnologia tem de estar na sala de aula, à mão no momento
+                    da necessidade. Pode ser um pequeno laboratório na sala ou
+                    um computador por aluno. Não estou falando exclusivamente de
+                    computador, mas de diversas tecnologias digitais”
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Navigation Arrow -->
+          <!-- Navigation Arrow - Next -->
           <button
             id="next-btn"
-            class="absolute top-1/2 -right-6 transform -translate-y-1/2 rounded-full p-2 focus:outline-none"
+            class="absolute top-1/2 -right-6 transform -translate-y-1/2 rounded-full p-2 focus:outline-none cursor-pointer"
             aria-label="Próximo"
           >
             <svg
@@ -373,10 +417,9 @@
           <!-- Navigation Arrow - Previous -->
           <button
             id="prev-btn"
-            class="absolute top-1/2 -left-6 transform -translate-y-1/2 rounded-full p-2 focus:outline-none hidden"
+            class="absolute top-1/2 -left-6 transform -translate-y-1/2 rounded-full p-2 focus:outline-none hidden cursor-pointer"
             aria-label="Anterior"
           >
-            <!-- Ícone personalizado SVG do botão de voltar -->
             <svg
               width="22"
               height="38"
@@ -402,9 +445,38 @@
         </div>
       </div>
     </section>
-
-    <footer></footer>
-
+    <div class="relative w-full overflow-hidden">
+      <svg
+        class="w-full h-[100px] rotate-180"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M0,80 C300,140 900,20 1200,80 L1200,0 L0,0 Z" fill="#2C567B" />
+      </svg>
+    </div>
+    <footer class="relative pt-24 bg-blue-tics" id="contato">
+      <div class="relative max-w-3xl mx-auto flex flex-col items-center">
+        <div
+          class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12"
+        >
+          <img
+            src="/assets/logo-inova.png"
+            alt="Inova Maranhão"
+            class="h-20 md:h-24 object-contain p-2"
+          />
+          <img
+            src="/assets/logo-ma-gov.png"
+            alt="Governo do Maranhão"
+            class="h-16 md:h-20 object-contain"
+          />
+        </div>
+        <div class="mt-10 text-white text-center text-sm pb-6">
+          <span class="font-semibold">CONTATO:</span><br />
+          grupo6desafio4trilhasinova@gmail.com
+        </div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./script.js"></script>
   </body>
