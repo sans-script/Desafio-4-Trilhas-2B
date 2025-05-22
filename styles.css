@@ -1,12 +1,14 @@
 @import "tailwindcss";
 
-
-@theme {
-  --color-green-tics: #71CA98;
-  --color-blue-tics: #2C567B;
+html {
+  scroll-behavior: smooth;
 }
 
+@theme {
+  --color-green-tics: #71ca98;
+  --color-blue-tics: #2c567b;
+}
 
 * {
-  font-family: "Passion One", cursive;
+  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
 }
